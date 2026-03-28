@@ -8,10 +8,11 @@ class Customer extends React.Component {
 
 class App extends React.Component {
   render() {
+    const cityname = "Mumbai";
     return (
     <div>
     <h1>Hello</h1>
-    <Customer city="India" />
+    <Customer city={cityname} />
     </div>
     )
   }

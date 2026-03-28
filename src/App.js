@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 class Customer extends React.Component {
   render() {
-    return <h2>I am from {this.props.city}! </h2>
+    return <h2>I am from {this.props.customerApp.country}! </h2>
   }
 }
 
 class App extends React.Component {
   render() {
-    const cityname = "Mumbai";
+    const customerInfo = {city: 'Bangalore', country: 'India'};
     return (
     <div>
     <h1>Hello</h1>
-    <Customer city={cityname} />
+    <Customer customerApp={customerInfo} />
     </div>
     )
   }

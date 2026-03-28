@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-class Customer extends React.Component {
+
+class Food extends React.Component {
   render() {
-    return <h2>I am from {this.props.customerApp.country}! </h2>
+    return <h2>I am {this.props.type} type Food. People love me. I am pizza</h2>
   }
 }
 
 class App extends React.Component {
   render() {
-    const customerInfo = {city: 'Bangalore', country: 'India'};
+    const mycode = <Food type="Continental" />;
     return (
     <div>
     <h1>Hello</h1>
-    <Customer customerApp={customerInfo} />
+    {mycode}
     </div>
     )
   }

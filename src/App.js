@@ -1,52 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-class AY extends React.Component {
-   constructor(props) {
-   super(props)
-   this.state = {
-    name: "Aaryan",
-    age: 11,
-    favourite_color: "Orange",
-    favourite_subject: "English",
-    favourite_hobby: "Building"
-   };
-   }
-   Name = () => {
-   this.setState({name: "Yuvaan"});
-   }
-   Age = () => {
-   this.setState({age: "7"})
-   }
-   favouriteColor = () => {
-   this.setState({favourite_color: "blue"});
-   }
-   favouriteSubject = () => {
-   this.setState({favourite_subject: "Math"})
-   }
-   favouriteHobby = () => {
-   this.setState({favourite_hobby: "Playing video games"})
-   }
+class MyStyling extends React.Component {
    render() {
+      const myheaderstyle = {
+         color: "orange",
+         backgroundColor: "blue",
+         fontFamily: "Arial",
+         padding: "6 px"
+      };
+
+const mystyle = {
+   color:"red",
+   backgroundColor: "pink",
+   fontFamily: "Times New Roman",
+   padding: "11 px"
+};
+
 return(
 <div>
-<h1>AD/Yd details </h1>
-<p>Ad name is {this.state.name}</p>
-<p>Ad is  {this.state.age} years old</p>
-<p>Ad's favourite color is {this.state.favourite_color}</p>
-<p>Ad's favourite subject is {this.state.favourite_subject}</p>
-<p>Ad's favourite Hobby is {this.state.favourite_hobby}</p>
-<button type="button" onClick={this.Name}>Click me for Yd name!</button>
-<button type="button" onClick={this.Age}>Click me for Yd age!</button>
-<button type="button" onClick={this.favouriteColor}>Click me for Yd favourite color!</button>
-<button type="button" onClick={this.favouriteSubject}>Click me for Yd favourite subject!</button>
-<button type="button" onClick={this.favouriteHobby}>Click me for Yd favourite Hobby!</button>
+<h1 style={myheaderstyle}>Hi</h1>
+<p style={mystyle}>How are you?</p>
 </div>
 );
-}
+   }
 }
 
 const root=ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AY />)
+root.render(<MyStyling />)
 
-export default AY;
+export default MyStyling;

@@ -17,11 +17,36 @@ code {
   background-color: aquamarine;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 7px;
+  border: 5px;
 }
 
 .mystyle {
-  color: crimson;
+  color: greenyellow;
   background-color: coral;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 9px;
+  border: 5px;
+}
+
+.mygreenstyle {
+  color: greenyellow;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  border: 5px;
+}
+
+.myendstyle {
+  color: orange;
+  background-color: lawngreen;
+  font-family: cursive;
+  padding: 10px;
+  border: 5px;
+}
+.myredstyle {
+  color: red;
+  background-color: azure;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 30px;
+  border: 20px;
 }

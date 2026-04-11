@@ -13,6 +13,7 @@ class MyStyling extends React.Component {
       <p className="mystyle">I go to St.clement school</p>
       <p className="mystyle">My favourite subject is math.</p>
       <p className="mystyle">I am 11 years old, and turn 12 on : 09,11,26</p>
+      <p className="mystyle">I am a family of 4. 1 brother,me and my parents!</p>
       <p className="mystyle">My hobbies are coding, building, and playing sports</p>
       <p className="mygreenstyle">I want to become a full-stack software developer when I grow up Ps: I'm Still not sure </p>
       <p className="myredstyle">My favorutie sport is martial arts.</p>

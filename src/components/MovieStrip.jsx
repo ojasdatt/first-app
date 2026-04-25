@@ -55,7 +55,7 @@ export default function MovieStrip({ movies }) {
 
    return (
     <div className="movie-strip">
-      <div className="strip-label">Tap a movie to view details:</div>
+      <div className="strip-label">Tap a movie to view the details:</div>
       <div className="strip-outer">
         <button className={`strip-arrow strip-left ${canLeft ? 'visible' : ''}`}
           onClick={() => scroll(-1)} aria-label="Scroll left" tabIndex={canLeft ? 0 : -1}>&#8249;</button>

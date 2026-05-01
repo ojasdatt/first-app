@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef} from 'react';
-import {omdbDetails} from '../utils/api';
+import {omdbDetails} from '../Utils/api';
 import {useApp} from '../context/AppContext';
 
 export default function MovieStrip({ movies }) {
